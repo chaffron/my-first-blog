@@ -1,0 +1,19 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Django Girls blog</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Galada|Mirza|Poiret+One" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css" />
+		<link rel="stylesheet" href="{% static 'css/blog.css' %}" />
+	</head>
+	<body>
+		<header>
+			<h1><a href="/" title="Home">Django Girls blog</a></h1>
+		</header>
+		<section>
+		{% block content %}
+		{% endblock %}
+		</section>
+	</body>
+</html>

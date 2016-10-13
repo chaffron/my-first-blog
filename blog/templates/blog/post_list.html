@@ -1,28 +1,19 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Django blog</title>
-	</head>
-	<body>
-		<header>
-			<h1><a href="/" title="Home">Django blog</a></h1>
-		</header>
-		<section>
-		{% for post in posts %}
-			<article>
-				<header>
-					<time pubdate itemprop="datePublished" datetime="" content="">
-					{{ post.published_date }}
-					</time>
-					<h1 itemprop="name">
-						<a href="" itemprop="url">{{ post.title }}</a>
-					</h1>
-				</header>
-				<section itemprop="description">
-					<p>{{ post.text|linebreaksbr }}</p>
-				</section>
-			</article>
-		{% endfor %}
-		</section>
-	</body>
-</html>
+{% extends 'blog/base.html' %}
+
+{% block content %}
+	{% for post in posts %}
+		<article>
+			<header>
+				<time pubdate itemprop="datePublished" datetime="" content="">
+				{{ post.published_date }}
+				</time>
+				<h1 itemprop="name">
+					<a href="" itemprop="url">{{ post.title }}</a>
+				</h1>
+			</header>
+			<section itemprop="description">
+				<p>{{ post.text|linebreaksbr }}</p>
+			</section>
+		</article>
+	{% endfor %}
+{% endblock %}
