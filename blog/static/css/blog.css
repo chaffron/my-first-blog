@@ -1,9 +1,130 @@
+body {
+	background-color: #fff; 
+	background-image: 
+	linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+	linear-gradient(#eee .1em, transparent .1em);
+	background-size: 100% 2.2em;
+}
+
 h1, h2, h3 {
 	font-family: 'Galada', cursive;
 }
 
+#site-banner {
+	background-color: #dd785a;
+	background:
+		radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0,
+		radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px,
+		radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0,
+		radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px,
+		radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0,
+		radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px,
+		radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0,
+		radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px,
+		linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,
+		linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0;
+	background-color: #300; 
+	background-size: 100px 100px;
+	margin-bottom: 2rem;
+}
+
+#site-banner > .row {
+	position: relative;
+}
+
+#site-banner h1, #site-banner h1 a {
+	color: white;
+	font-size: 4rem;
+	padding: 2rem 0 1rem;
+
+}
+
+#site-banner .icon-add {
+	position: absolute;
+	right: 0;
+	top: 1rem;
+	display: block;
+	width: 2rem;
+	height: 2rem;
+	background-color: #fff;
+	border-radius: 50%;
+	content: "+";
+	color: #dd785a;
+	font-size: 2rem;
+	line-height: 0.8;
+	text-align: center;
+}
+
+#site-banner .icon-add:hover {
+	background-color: #492833;
+	color: #edd599;
+	transition: all 0.8s ease;
+	transform: scale(1.2);
+}
+
 article { 
 	font-family: 'Poiret One', cursive;
+	font-size: 1.2rem;
+	margin-bottom: 3em;
+	color: #21170d;
+}
+
+article header {
+	position: relative;
+}
+
+article header h1 {
+	width: auto;
+	max-width: 85%;
+	font-size: 3rem;
+	color: #600;
+}
+article header h1 a {
+	color: #600;
+}
+
+article header h1 a:hover {
+	color: inherit;
+	text-decoration: underline;
+	transition: all 0.4s ease;
+}
+
+article header .button {
+	position: absolute;
+	right: 0;
+	top: 1em;
+}
+
+article time[pubdate] {
+	font-weight: bold;
+	font-style: italic;
+	color: #999;
+}
+
+article p {
+	font-size: 1.5rem;
+}
+
+.button {
+	background-color: #492833;
+	border: 3px solid #492833;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.2rem;
+	padding: 0.5em 1em;
+}
+
+.button:hover {
+	transition: all 0.4s ease;
+	background-color: #a00;
+	border-color: #800;
+	font-weight: bold;
+	/*color: #492833;*/
+}
+
+.button.round {
+	border-radius: 1000px;
 }
 
 /*font-family: 'Mirza', cursive;*/
